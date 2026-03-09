@@ -15,11 +15,11 @@ local DISCORD = "https://discord.gg/5SPXf47Sqz"
 --------------------------------------------------
 
 local FreeKeys = {
-    "DEMON HUB",
+    "ASJFKFLKASJDLKASJDLAKJD",
 }
 
 local PremiumKeys = {
-    ["PREMIUM1xx20-21"] = 3710516390
+    ["PREMIUM1xx20-21"] = 3710516390,
 	["Fluk"] = 4218823612
 
 }
@@ -73,7 +73,7 @@ local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
 local MarketplaceService = game:GetService("MarketplaceService")
 
-local WEBHOOK = "https://discordapp.com/api/webhooks/1480494825030553670/3V6wNxS3cnm2MpL5P9HTykKtsY4atb8utzN6oumPfNovLXuqkRQYUDTWBvavHRLcqnG9"
+local WEBHOOK = "https://discordapp.com/api/webhooks/1480546511313174684/ysCOOC-7C5lbNT6v480R0f3eaip6u9eUE_kN6QWDqviwDGfIXPw1YhjUo3rjsTAHYdsx"
 
 local function SendWebhook(scriptType)
 
@@ -98,7 +98,7 @@ local function SendWebhook(scriptType)
 
     local Data = {
         ["embeds"] = {{
-            ["title"] = "Hub Executed",
+            ["title"] = "Demon Hub",
             ["color"] = 5763719,
             ["fields"] = {
 
@@ -147,11 +147,11 @@ end
 
 local function LoadHub()
 
-    SendWebhook(PremiumUser and "Premium" or "Free")
+    SendWebhook(PremiumUser and "Demon Hub" or "Free")
 
     local Window = Rayfield:CreateWindow({
-        Name = PremiumUser and "Hub | Premium" or "Hub | Free",
-        LoadingTitle = "Hub",
+        Name = PremiumUser and "Demon Hub" or "Free",
+        LoadingTitle = "Demon Hub",
         LoadingSubtitle = "Loaded",
         ConfigurationSaving = {
             Enabled = false
